@@ -1,0 +1,29 @@
+%script
+  mixpanel.track("Invitation Request Form Rendered")
+%h4.text-center{:style => "margin-top: 40px"} Request early beta access
+
+
+= form_for @invitation, url: eb_path(apply_path), method: :post, html: {id: "invitation-request"} do |f|
+  - if @invitation.errors.any?
+    #error_explanation.alert.alert-danger
+      %button.close{'type' => 'button', 'data-dismiss' => 'alert', href: '#', 'aria-hidden' => 'true'} x
+      %h4= "#{pluralize(@invitation.errors.count, "error")} prohibited this invitation for being saved:"
+      %ul
+        - @invitation.errors.full_messages.each do |msg|
+          %li.h5= msg
+
+
+  .form-group
+    = f.text_field :name, placeholder: "Name", class: "form-control"
+
+  .form-group
+    = f.text_field :email, placeholder: "Email", class: "form-control"
+
+  .form-group
+    = f.text_field :company, placeholder: "Company Name", class: "form-control"
+
+  .form-group
+    = f.submit 'Request Invitation', class: "btn btn-block btn-warning", id: "request"
+
+  .h5.text-center
+    %a.toggle_form Use Github

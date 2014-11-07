@@ -1,0 +1,18 @@
+%script
+  mixpanel.track("Processing Page Rendered")
+
+.login-window
+  .login-inner
+    .container
+      .row
+        .col-md-6.col-md-offset-3.text-center.splash-container-processing
+          .loading
+            =image_tag 'logo_spin.png'
+          .splash-logo-base
+          .col-md-10.col-md-offset-1
+            %h2.message Please wait while your account is being created!
+
+
+#processing-account(data-account_token = "#{@account.token}" data-github_auth = "#{@account.authentication.present?}")
+
+= link_to "Go to slingshot", "https://github.com/login/oauth/authorize?client_id=d11e2355450c1567c0bd"

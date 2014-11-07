@@ -1,0 +1,5 @@
+- if target.errors.any?
+  #error_messages.alert.alert-danger
+    %button.close{'type' => 'button', 'data-dismiss' => 'alert', href: '#', 'aria-hidden' => 'true'} x
+    - target.errors.full_messages.each do |msg|
+      %h5= msg

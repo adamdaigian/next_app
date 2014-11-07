@@ -1,0 +1,109 @@
+.btn {
+	&.signup {
+		margin: auto;
+		padding: 14px; 
+		font-weight: 500; 
+		background-color: #72b22d;
+	    *zoom: 1;
+	    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF72b22d', endColorstr='#FF4c9212');
+	    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #72b22d), color-stop(100%, #4c9212));
+	    background-image: -webkit-linear-gradient(top, #72b22d 0%, #4c9212 100%);
+	    background-image: -moz-linear-gradient(top, #72b22d 0%, #4c9212 100%);
+	    background-image: -o-linear-gradient(top, #72b22d 0%, #4c9212 100%);
+	    background-image: linear-gradient(top, #72b22d 0%, #4c9212 100%);
+	    -webkit-box-shadow: 0px 1px 0px #292d33, inset 0px 1px 0px 0px #98c864;
+	    box-shadow: 0px 1px 0px #292d33, inset 0px 1px 0px 0px #98c864;
+	    text-shadow: 0 1px 0px #2a6a08;
+	    padding: 0.9em 1.73333em 0.9em 1.73333em;
+	    font-family: 'Helvetica', Arial, sans-serif;
+	    font-weight: bold;
+	    color: #fff;
+	    border: 0 none;
+
+	  @media (max-width: 480px) {
+			&.signup {
+				font-size: 14px;
+			}
+		} 
+	}
+	border-radius: 3px;
+}
+
+.btn.signup .icon-github {
+	padding-right: 2px;
+}
+
+.btn-default {
+  border: solid 1px #b9b9b9;
+  background-color: #dfdee1;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFCFCFC', endColorstr='#FFDFDEE1');
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fcfcfc), color-stop(100%, #dfdee1));
+  background-image: -webkit-linear-gradient(top, #fcfcfc 0%, #dfdee1 100%);
+  background-image: -moz-linear-gradient(top, #fcfcfc 0%, #dfdee1 100%);
+  background-image: -o-linear-gradient(top, #fcfcfc 0%, #dfdee1 100%);
+  background-image: linear-gradient(top, #fcfcfc 0%, #dfdee1 100%);
+  text-shadow: 0 1px 1px white;
+  box-shadow: 0px 1px 0px #e7e7e7;
+  border-bottom: 1px solid #a8a8a8;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.2em;
+  padding: 0.6em 1.73333em 0.6em 1.73333em;
+}
+
+.btn-default:active {
+  background-color: #d1d1d1;
+  *zoom: 1;
+}
+
+.navbar-btn.btn-default {
+	box-shadow: 0px 1px 0px #191c20;
+	border: 0 none;
+	filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFeff1f3', endColorstr='#FFd0cfd2');
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #eff1f3), color-stop(100%, #d0cfd2));
+	background-image: -webkit-linear-gradient(top, #eff1f3 0%, #d0cfd2 100%);
+	background-image: -moz-linear-gradient(top, #eff1f3 0%, #d0cfd2 100%);
+	background-image: -o-linear-gradient(top, #eff1f3 0%, #d0cfd2 100%);
+	background-image: linear-gradient(top, #eff1f3 0%, #d0cfd2 100%);
+	padding: 0.7em 1.73333em 0.7em 1.73333em;
+}
+
+.navbar-btn.btn-default:active {
+	background: #c6c5c8;
+}
+
+.footer .btn {
+	font-weight: bold; 
+	background-color: #72b22d;
+    *zoom: 1;
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF72b22d', endColorstr='#FF4c9212');
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #72b22d), color-stop(100%, #4c9212));
+    background-image: -webkit-linear-gradient(top, #72b22d 0%, #4c9212 100%);
+    background-image: -moz-linear-gradient(top, #72b22d 0%, #4c9212 100%);
+    background-image: -o-linear-gradient(top, #72b22d 0%, #4c9212 100%);
+    background-image: linear-gradient(top, #72b22d 0%, #4c9212 100%);
+    -webkit-box-shadow: 0px 1px 0px #292d33, inset 0px 1px 0px 0px #98c864;
+    box-shadow: 0px 1px 0px #292d33, inset 0px 1px 0px 0px #98c864;
+    text-shadow: 0 1px 0px #2a6a08;
+    font-family: 'Helvetica', Arial, sans-serif;
+    color: #fff;
+    border: 0 none;
+	font-size: 14px;
+	line-height: 1.2em;
+	padding: 0.6em 1.73333em 0.6em 1.73333em;
+	-webkit-font-smoothing: antialiased;
+}
+
+.login-window .btn.signup {
+	max-width: 70%;
+	-webkit-font-smoothing: antialiased;
+}
+
+.login-window .btn.signup .icon-github {
+	font-size: 22px !important;
+}
+
+#github-signup i {
+	padding-right: 6px;
+}

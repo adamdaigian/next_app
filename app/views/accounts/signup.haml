@@ -1,0 +1,39 @@
+%script
+  mixpanel.track("Signup Page Rendered")
+
+.login-window
+  .login-inner
+    .container
+      .row
+        .col-md-6.col-md-offset-3.text-center.splash-container
+          .splash-logo
+          .col-md-12.login-container
+            = link_to "<i class='icon-github icon-2x'></i>Sign up with GitHub".html_safe, omniauth_signin_path('github'), :class => "btn btn-lg btn-block btn-success text-center signup", id: "github-signup"
+            %br
+            .hrule
+              %span
+                or
+            = form_for @account, url: eb_path(create_account_path), method: :post do |f|
+              - if @account.errors.any?
+                #error_explanation.alert.alert-danger.text-left
+                  %button.close{'type' => 'button', 'data-dismiss' => 'alert', href: '#', 'aria-hidden' => 'true'} x
+                  %h4= "#{pluralize(@account.errors.count, "error")} prohibited this account from being saved:"
+                  %ul
+                    - @account.errors.full_messages.each do |msg|
+                      %li.h5= msg
+
+              .form-group
+                = f.text_field :name, class: "form-control", placeholder: "Name"
+
+              .form-group
+                = f.text_field :email, class: "form-control", placeholder: "Email" #, type: "email"
+
+              .form-group
+                = f.text_field :password, class: "form-control", placeholder: "Password", type: "password"
+
+              .checkbox#checkbox-login.text-left
+                = check_box_tag :remember_me
+                = label_tag "Remember me"
+
+              .text-right
+                = f.submit "Sign up", class: "button btn btn-warning", id: "splash-button-signup"

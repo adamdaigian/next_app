@@ -1,0 +1,60 @@
+/*
+This CSS resource incorporates links to font software which is the valuable copyrighted
+property of Monotype Imaging and/or its suppliers. You may not attempt to copy, install,
+redistribute, convert, modify or reverse engineer this font software. Please contact Monotype
+Imaging with any questions regarding Web Fonts:  http://webfonts.fonts.com
+*/
+
+@font-face{ font-family:'Frutiger Next W01 Light';
+src:	url(font-path('ed851bde-4b1b-45ca-9fbb-9603819932cf.eot?#iefix'));
+src:	url(font-path('ed851bde-4b1b-45ca-9fbb-9603819932cf.eot?#iefix')) format('eot'),
+		url(font-path('35288d5e-681e-4b64-a930-438d2b2551d6.woff')) format('woff'),
+		url(font-path('1a22c75e-4022-43cd-a543-70ca36eb92aa.ttf')) format('truetype'),
+		url(font-path('2c937a24-6a4c-47b2-b3f3-28173e19b53d.svg#2c937a24-6a4c-47b2-b3f3-28173e19b53d')) format('svg');
+}
+
+@font-face{ font-family:'FrutigerNextW01-LightIt';
+src:	url(font-path('799e1dc9-b0bd-4a73-898c-9729f2a003c0.eot?#iefix'));
+src:	url(font-path('799e1dc9-b0bd-4a73-898c-9729f2a003c0.eot?#iefix')) format('eot'),
+		url(font-path('28b35c14-90d5-403e-a14a-cca4c52c53d1.woff')) format('woff'),
+		url(font-path('f2e177d9-e871-4cc0-8b31-4983175ea674.ttf')) format('truetype'),
+		url(font-path('6cad5c33-9239-46ed-b949-27cdb6cc478c.svg#6cad5c33-9239-46ed-b949-27cdb6cc478c')) format('svg');
+}
+
+@font-face{ font-family:'FrutigerNextW01-Medium';
+src:	url(font-path('49a11db7-306b-4d27-9761-382ab23f6866.eot?#iefix'));
+src:	url(font-path('49a11db7-306b-4d27-9761-382ab23f6866.eot?#iefix')) format('eot'),
+		url(font-path('c9372d3f-1898-4ecb-9e3f-59155488dfc9.woff')) format('woff'),
+		url(font-path('269e0a66-b2bb-4f96-a51b-c0ec7e43af8b.ttf')) format('truetype'),
+		url(font-path('3b5bdcb1-2809-47df-b46a-bdd7e3cf70a3.svg#3b5bdcb1-2809-47df-b46a-bdd7e3cf70a3')) format('svg');
+}
+
+@font-face{ font-family:'FrutigerNextW01-MediumI';
+src:	url(font-path('3cacdadb-de21-4357-af69-3488127fbd70.eot?#iefix'));
+src:	url(font-path('3cacdadb-de21-4357-af69-3488127fbd70.eot?#iefix')) format('eot'),
+		url(font-path('2547c541-90cc-4831-8147-789e11b1ba89.woff')) format('woff'),
+		url(font-path('e9b6bd6b-c122-4856-8c16-ab54f1bec078.ttf')) format('truetype'),
+		url(font-path('e6087d5a-47c0-47af-acd4-13ed57e9c550.svg#e6087d5a-47c0-47af-acd4-13ed57e9c550')) format('svg');
+}
+
+
+@font-face{ font-family:'FrutigerNextW01-Regular';
+src: 	url(font-path('4cef6d85-d22a-4541-b469-da13751862aa.eot?#iefix'));
+src: 	url(font-path('4cef6d85-d22a-4541-b469-da13751862aa.eot?#iefix')) format('eot'),
+		url(font-path('d74de079-587d-4049-9cca-50ba02a536f9.woff')) format('woff'),
+		url(font-path('07749504-e72d-4fc9-a58d-5b853dd51fc7.ttf')) format('truetype'),
+		url(font-path('8178e4eb-8ce0-4c15-a701-4a102b204c0e.svg#8178e4eb-8ce0-4c15-a701-4a102b204c0e')) format('svg');
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'FrutigerNextW01-Regular', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+}
+
+h1.medium {
+  font-family: 'FrutigerNextW01-Medium', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 44px;
+}

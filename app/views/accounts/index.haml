@@ -1,0 +1,18 @@
+.container
+  %h1{:style => "margin-top: 100px"} Accounts
+  %table.table.table-striped
+    %thead
+      %tr
+        %th Name
+        %th Email
+        %th Created At
+
+
+    %tbody
+      - @accounts.each do |a|
+        %tr
+          %th= a.name
+          %th= a.email
+          %th= a.created_at
+
+    = will_paginate @accounts

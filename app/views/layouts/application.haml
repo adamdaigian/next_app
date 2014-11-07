@@ -1,0 +1,19 @@
+!!!
+%html
+  %head
+    %meta{:charset => "utf-8"}
+      %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
+        %meta{:content => "width=device-width", :name => "viewport"}
+          %meta{:name => "description", :content => "Define and deploy any app on any cloud. Create new applications or onboard existing apps in three easy steps."}
+    %title ElasticBox
+    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+    = csrf_meta_tags
+    = render "/static_pages/analytics"
+    = render "/static_pages/fonts"
+    %link{ href: '/assets/favicon.ico', rel: 'shortcut icon', type: 'image/png' }
+
+  %body
+    = render "/header"
+    = yield
+    = render "/footer"

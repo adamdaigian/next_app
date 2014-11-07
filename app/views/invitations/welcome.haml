@@ -1,0 +1,24 @@
+%script
+  mixpanel.track("Welcome View Rendered")
+
+.jumbotron{style:"min-height:510px;"}
+  .container
+    .row
+      .col-md-6.col-md-offset-3.well
+        %h2.welcome.text-center Congratulations, you are ##{@invitation.id}!
+
+        %hr.soften
+        %h4.text-center{ style: "line-height:1.5em;"}
+          Check your email to confirm your account. If you have a spare moment, please take our #{ link_to 'developer survey', 'https://docs.google.com/a/elasticbox.com/forms/d/1nLae_8N9iJAyFznmMnt5H95TvJZvDmRG0UYr7V12IZ8/viewform', :class => 'welcome'} which will help us build the product you want to use.
+        %hr.soften
+        .beta-share.text-center
+          .col-md-6
+            .btn.btn-md.col-md-12.btn-info#linkedin{track: "LinkedIn Share Clicked"}
+              =fa_icon "linkedin"
+              Share On LinkedIn
+          .col-md-6
+            .btn.btn-md.col-md-12.btn-info#twitter{track: "Twitter Share Clicked"}
+              =fa_icon "twitter"
+              Share On Twitter
+
+= render "static_pages/mktg_copy_home"

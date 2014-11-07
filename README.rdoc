@@ -1,0 +1,47 @@
+== README
+
+== Things to do before you start:
+
+1. Install XCode and dependencies
+* Install or update XCode, add developer tools
+* Zeus: `gem install zeus`
+* Redis: `brew install redis`
+
+
+2. Set up your environment variable in config.yml:
+Copy config.yml.example into config.yml and add your personal config params.
+Things to add:
+* your email
+* your mandrill API keys to send emails (you will need your own Mandrill account and will find instructions about how to get them in the Mandrill support section)
+* your password to access the protected pages (/invitations and /resque)
+* your Github API key and secret
+
+
+== Launching server and background jobs:
+We use the Zeus gem to make running things faster and the Foreman to launch our background jobs. 
+
+To launch your server and background job, do `zeus start` followed by `foreman start`. Foreman should start everything you need (redis, workers, web server). If it doesn't work, just do it manually (see below)
+
+
+== Launching server manually: 
+Type `zeus start` then open a new tab in your terminal and type "zeus s"
+
+
+== Launching background tasks manually
+`redis-server /usr/local/etc/redis.conf`
+`QUEUE=* rake environment resque:work`
+
+
+
+== Running test: 
+Type `guard` in terminal (after you started zeus in a separate terminal)
+
+
+
+== Access to queue:
+In dev, you can just do `resque-web` to open the resque web UI, or access the page directly at `localhost:3000/resque`
+
+== Testing and Deleting Tenants:
+Start Zeus Console by typing: zeus console in the command line. To delete the tenant use these commands in this order:
+$ Account.last.destroy_tenant
+$ Account.last.destroy

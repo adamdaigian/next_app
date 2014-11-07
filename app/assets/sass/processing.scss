@@ -1,0 +1,21 @@
+.splash-container-processing {
+  top: 264px;
+}
+
+.splash-logo-base {
+  margin: auto;
+  height: 300px;
+  width: 400px;
+  margin-top: -160px;
+  background: asset-url('logo_lg_base.png') no-repeat center;
+}
+
+.spin {
+    position: relative;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }

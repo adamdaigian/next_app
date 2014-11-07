@@ -1,0 +1,63 @@
+.navbar {
+  background: #272b30;
+  border-bottom: 0;
+  min-height: 64px;
+}
+
+.navbar .navbar-nav {
+  padding-top: 6px;
+}
+
+.navbar-inverse .navbar-nav > li {
+  padding-top: 5px;
+  margin-left: 20px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #a8dfff;
+  text-shadow: 0 1px #14171c;
+  padding: 10px 20px;
+  margin-left: 20px;
+}
+
+.navbar-collapse.in, .navbar-collapse.collapsing {
+  margin-top: 9px;
+}
+
+.navbar-collapse.in .navbar-nav , .navbar-collapse.collapsing .navbar-nav {
+  width: 100%;
+  margin: 0;
+}
+
+.navbar-collapse.in .navbar-nav li, .navbar-collapse.collapsing .navbar-nav li,
+.navbar-collapse.in .navbar-nav li a, .navbar-collapse.collapsing .navbar-nav li a {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.navbar-collapse.in .navbar-btn, .navbar-collapse.collapsing .navbar-btn,
+.navbar-collapse.in #login-navbar, .navbar-collapse.collapsing #login-navbar {
+  width: 100%;
+  left: 0;
+}
+
+.navbar-brand {
+  position: absolute;
+  margin-top: 1px;
+  line-height: 30px;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    margin-top:1px;
+  }
+
+  .navbar-toggle {
+    margin-top: 12px;
+  }
+
+  #login-navbar {
+    position: relative;
+    left: -38px;
+  }
+}

@@ -1,0 +1,21 @@
+.container
+  %h1{:style => "margin-top: 100px"} Invitations
+  %table.table.table-striped
+    %thead
+      %tr
+        %th Name
+        %th Email
+        %th Created At
+        %th Validated?
+
+
+    %tbody
+      - @invitations.each do |i|
+        %tr
+          %th= i.name
+          %th= i.email
+          %th= i.created_at
+          %th= i.validated?
+
+    = will_paginate @invitations
+

@@ -1,0 +1,33 @@
+%script
+  mixpanel.track("Login Page Rendered")
+
+.login-window
+  .login-inner
+    .container
+      .row
+        .col-md-6.col-md-offset-3.text-center.splash-container
+          .splash-logo
+          .col-md-12.login-container
+
+            %button.btn.btn-success.btn-block.signup{ style: "width:100%;" }
+              .i.icon-github.icon-2x
+              Log in with GitHub
+            %br
+            .hrule
+              %span
+                or
+            %form{ "role" => "form" }
+
+              .form-group
+                %input{ :class => "form-control", :placeholder => "Email", "type" => "email" }
+
+              .form-group
+                %input{ :class => "form-control", :placeholder => "Password", "type" => "password" }
+
+              .checkbox#checkbox-login.text-left
+                %input{ :type => "checkbox" }
+                = label_tag "Remember me"
+
+              .text-right
+                %button.btn.btn-warning#button-login
+                  Log in

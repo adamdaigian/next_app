@@ -1,0 +1,26 @@
+.jumbotron.eb-header#jumbotron{style:"min-height:480px;"}
+  .container
+    .row
+      .col-md-12.sign-up-form.github{style:"display:none;"}
+        .col-md-11.col-md-offset-1.sign-up-copy.text-center
+          %h1.header-text Deploy apps in one click. Any stack. Any host.
+          %h3.sub-header
+            For developers, teams, and enterprise. Rapid deployment. Freedom from infrastructure.
+
+        .col-md-6.col-md-offset-3
+          %h4.text-center Coming early 2014, request early beta access
+          = link_to "<i class='icon-github'></i> Request with Github".html_safe, '/auth/github', :class => "btn btn-lg btn-block btn-success text-center signup"
+          %h5.text-center
+            %a#email-signup.toggle_form Use email
+
+      .col-md-6.col-md-offset-3.sign-up-form.email{style:"display:inline;"}
+        =render partial:"invitations/form"
+
+
+
+
+= render partial: "static_pages/mktg_copy_home"
+
+
+
+

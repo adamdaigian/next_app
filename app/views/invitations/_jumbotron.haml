@@ -1,0 +1,47 @@
+.jumbotron.eb-header#jumbotron
+  .container
+    .row
+      .col-md-12.github
+        .col-md-12.sign-up-copy.text-center
+          %h1.header-text Deploy code in one click. Any stack. Any cloud.
+          %h3.sub-header
+            For developers, teams, and enterprise. Rapid deployment. Freedom from infrastructure.
+
+    .row
+      .col-md-6.col-md-offset-3.text-center#christmas-signup
+        =form_for @invitation, url: eb_path(apply_path), method: :post, remote: true, html: {class: "form-inline skinny", role: "form"} do |f|
+          #error_messages
+          .form-group
+            = f.text_field :email, placeholder: "Enter work email", class: "form-control input-lg", :track => "Email Inline"
+
+          .form-group
+            = f.submit 'Get Invitation', class: "btn signup", :track => "Request Inline"
+
+        %h5.text-center#git-omniauth
+          = link_to "<i class='fa fa-github'></i> Request with GitHub".html_safe, omniauth_signin_path('github'), :class => "text-center", :id => "github", :track => "GitHub Inline"
+
+            
+    .row
+      .col-md-12.text-center
+        =image_tag "dots.png", class: 'dots'
+        .col-md-4.providers
+          =image_tag "step1.png"
+          %h4.round
+            1
+          %h5
+            Add Your Clouds
+        .col-md-4.stack
+          =image_tag "step2.png"
+          %h4.round
+            2
+          %h5
+            Customize Your Stack
+        .col-md-4
+          =image_tag "step3.png"
+          %h4.round
+            3
+          %h5
+            Deploy Your Code
+
+
+

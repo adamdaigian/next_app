@@ -1,0 +1,145 @@
+.jumbotron {
+  background: #393c43 asset-url('clouds.png') 50% 0 no-repeat;
+  padding-top: 100px;
+  padding-bottom: 60;
+  margin-bottom: 0px;
+
+  h1 {
+    text-shadow: 0px 1px #1f2229;
+  }
+  h4.round {
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    border: 3px solid #fff;
+    color: #fff;
+    text-shadow: 0px 1px #1f2229;
+    clear: both;
+    float: none;
+    margin: 20px auto 0;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+  }
+  h5 {
+    font-size: 14px;
+    text-shadow: 0px 1px #1f2229;
+  }
+
+  #invitation_email {
+    border-radius: 3px;
+    font-size: 15px;
+  }
+
+  #christmas-signup {
+    padding-top: 30px;
+    margin-top: 0;
+  }
+
+  a {
+    cursor: pointer;
+    color: #a8dfff;
+    text-shadow: 0 1px #14171c;
+    &:hover {
+      text-decoration: none;
+      color: inherit;
+      color: #fff;
+    }
+
+    &.welcome {
+      font-weight: 500;
+      color: #5bc0de;
+      text-shadow: none;
+    }
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  .dots {
+    position: absolute;
+    margin-left: -272px;
+    margin-top: 120px;
+  }
+
+  .stack {
+    margin-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .sign-up-form {
+
+    &.github {
+      .sign-up-copy {
+       margin-top: 50px;
+       margin-bottom: 40px;
+      }
+    }
+
+    &.email {
+      display: none;
+    }
+  }
+
+  .sub-header {
+    font-size: 18px;
+    color: #999ca0;
+    text-shadow: 0px 1px #1f2229;
+    margin-top: 2px;
+  }
+
+  .sign-up-header {
+  }
+
+  @media (max-width: 992px) {
+    .dots {
+      display:none;
+    }
+
+    .providers {
+      margin-top: 50px;
+    }
+
+    .stack {
+      margin-top:0;
+      padding-bottom:0;
+    }
+  }
+}
+
+.eb-header {
+  color: #fff;
+}
+
+.break {
+  height: auto;
+  width: 100%;
+  background: #222222;
+}
+
+.develop-header {
+  color: #fff;
+  margin:0;
+  font-weight: 100;
+  padding-top:5px;
+}
+
+.sub {
+  margin-top: -5px;
+}
+
+.values {
+  margin-top: 25px;
+}
+
+#git-omniauth {
+  margin-top: 17px;
+  font-size: 17px;
+}
+
+.welcome {
+  font-weight: bold;
+  color: #5bc0de;
+  text-shadow: none;
+}
