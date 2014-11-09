@@ -10,7 +10,8 @@
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
     = render "/static_pages/analytics"
-    = render "/static_pages/fonts"
+    / = render "/static_pages/fonts"
+    %link{ href: 'http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css', rel: 'stylesheet' }
     %link{ href: '/assets/favicon.ico', rel: 'shortcut icon', type: 'image/png' }
 
   %body
